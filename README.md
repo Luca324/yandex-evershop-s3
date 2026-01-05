@@ -25,19 +25,15 @@ yarn add @luca324/yandex-evershop-s3
 ## Использование
 
 Используйте точно так же, как оригинальный пакет:
+добавьте в файл .env следующие переменные:
 
-```javascript
-const { S3FileStorage } = require('@luca324/yandex-evershop-s3');
-
-const storage = new S3FileStorage({
-  region: 'ru-central1',
-  endpoint: 'https://storage.yandexcloud.net',
-  credentials: {
-    accessKeyId: 'YOUR_KEY',
-    secretAccessKey: 'YOUR_SECRET'
-  },
-  bucket: 'your-bucket'
-});
+```env
+AWS_ACCESS_KEY_ID=your_access_key_id       # ID ключа доступа (в интерфейсе Yandex S3)
+AWS_SECRET_ACCESS_KEY=your_secret_access_key      # Секретный ключ доступа
+AWS_BUCKET_NAME=your_bucket_name        # Имя бакета
+AWS_REGION=ru-central1       # Регион (для Yandex S3 работает `ru-central1`)
+AWS_ENDPOINT=https://storage.yandexcloud.net        # Endpoint для Yandex S3 (`https://storage.yandexcloud.net`)
+AWS_S3_FORCE_PATH_STYLE=true
 ```
 
 ## Как это работает

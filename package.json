@@ -5,43 +5,41 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-      "prepare": "patch-package",
-      "postinstall": "patch-package",
-      "build": "tsc --build || echo 'TypeScript not needed'",
-      "prepublishOnly": "npm run build"
+        "prepare": "patch-package",
+        "postinstall": "patch-package"
     },
     "dependencies": {
-      "@evershop/s3_file_storage": "^1.0.0",
-      "patch-package": "^8.0.0"
+        "@evershop/s3_file_storage": "2.0.0",
+        "patch-package": "^8.0.1"
     },
     "peerDependencies": {
-      "@evershop/s3_file_storage": "^1.0.0"
+        "@evershop/s3_file_storage": "^2.0.0"
     },
     "files": [
-      "dist/",
-      "patches/",
-      "README.md",
-      "LICENSE"
+        "dist/",
+        "patches/",
+        "README.md",
+        "LICENSE"
     ],
     "keywords": [
-      "evershop",
-      "yandex",
-      "s3",
-      "yandex-cloud",
-      "storage",
-      "patch"
+        "evershop",
+        "yandex",
+        "s3",
+        "yandex-cloud",
+        "storage",
+        "patch"
     ],
     "author": "Luca324 <tanya.mosol@yandex.ru>",
     "license": "MIT",
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Luca324/yandex-evershop-s3.git"
+        "type": "git",
+        "url": "git+https://github.com/Luca324/yandex-evershop-s3.git"
     },
     "bugs": {
-      "url": "https://github.com/Luca324/yandex-evershop-s3/issues"
+        "url": "https://github.com/Luca324/yandex-evershop-s3/issues"
     },
     "homepage": "https://github.com/Luca324/yandex-evershop-s3#readme",
     "publishConfig": {
-      "access": "public"
+        "access": "public"
     }
-  }
+}
