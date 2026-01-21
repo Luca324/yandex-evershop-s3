@@ -1,6 +1,6 @@
 {
     "name": "@luca324/yandex-evershop-s3",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Patched version of @evershop/s3_file_storage with Yandex Cloud S3 support",
     "peerDependencies": {
         "@evershop/s3_file_storage": "^2.0.0"
