@@ -2,24 +2,12 @@
     "name": "@luca324/yandex-evershop-s3",
     "version": "1.0.0",
     "description": "Patched version of @evershop/s3_file_storage with Yandex Cloud S3 support",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "prepare": "patch-package",
-        "postinstall": "patch-package"
-    },
-    "dependencies": {
-        "@evershop/s3_file_storage": "2.0.0",
-        "patch-package": "^8.0.1"
-    },
     "peerDependencies": {
         "@evershop/s3_file_storage": "^2.0.0"
     },
     "files": [
-        "dist/",
         "patches/",
-        "README.md",
-        "LICENSE"
+        "README.md"
     ],
     "keywords": [
         "evershop",
